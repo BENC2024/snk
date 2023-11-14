@@ -1,0 +1,36 @@
+
+<div class="container">
+
+   <span class="d-flex justify-content-center"><h1>Listado de titanes</h1></span>
+   <!-- <button (click)="obtener_titanes()">Obtener titanes</button> -->
+   <table class="table table-bordered table-hover">
+      <thead class="text-center">
+         <tr>
+            <th>#</th>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Alliance</th>
+            <th>Origin</th>
+            <th>Titan</th>
+            <th>Death</th>
+            <th>Image</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr *ngFor="let item of listado; let num = index ">
+            <th>{{num}}</th>
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.Age}}</td>
+            <td>{{item.alliance}}</td>
+            <td>{{item.origin}}</td>
+            <td>{{item.titan}}</td>
+            <td>{{item.Death}}</td>
+            <td>{{item.img}}</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+<!---[routerLink]="['/listado',item.id]-->

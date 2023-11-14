@@ -3,14 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { EjemploComponent } from './ejemplo/ejemplo.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DetailTitanesComponent } from './detail-titanes/detail-titanes.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EjemploComponent,
+    DetailTitanesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
